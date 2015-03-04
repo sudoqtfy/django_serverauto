@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block contents %}
+    <link href="/static/app/include/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+<div>
+	<hr>
+	<ul class="breadcrumb">
+		<li>
+			<a href="/">Home</a> <span class="divider">/</span>
+		</li>
+		<li>
+			<a href="/app/getServerList">Server Manage</a>
+		</li>
+	</ul>
+	<hr>
+</div>
+<hr>
+<!--start table-->
+<div class="row-fluid sortable ui-sortable" id="maingrid"></div>
+<!--end table-->
+<hr>
+<!--execute command-->
+<div class="row-fluid sortable ui-sortable">
+<div class="box span12">
+    <div data-original-title="" class="box-header">
+        <h2><i class="icon-edit"></i><span class="break"></span>Execute Command</h2>
+        <div class="box-icon">
+            <a class="btn-setting" href="#"><i class="icon-wrench"></i></a>
+            <a class="btn-minimize" href="#"><i class="icon-chevron-up"></i></a>
+            <a class="btn-close" href="#"><i class="icon-remove"></i></a>
+        </div>
+    </div>
+    <div class="box-content">
+          <fieldset>
+            <div class="control-group"> <label for="typeahead" class="control-label">Auto complete </label>
+              <div class="controls">
+                <select id="selectmodule" name='selectmodule'>
+                  <option value="shell" selected="selected">shell</option>
+                  <option value="script">script</option>
+                  <option value="fetch">download</option>
+                  <option value="yum">yum</option>
+                  <option value="copy">upload</option>
+                </select>
+                <span id="textgroup">
+                  <input type="text" id="shell" data-source="[&quot;ifconfig&quot;,&quot;df&quot;,&quot;pwd&quot;,&quot;who&quot;,&quot;uptime&quot;,&quot;vmstat&quot;,&quot;netstat -tunlp&quot;,&quot;netstat&quot;,&quot;florida&quot;,&quot;georgia&quot;,&quot;hawaii&quot;,&quot;idaho&quot;,&quot;illinois&quot;,&quot;indiana&quot;,&quot;iowa&quot;,&quot;kansas&quot;,&quot;kentucky&quot;,&quot;louisiana&quot;,&quot;maine&quot;,&quot;maryland&quot;,&quot;massachusetts&quot;,&quot;michigan&quot;,&quot;minnesota&quot;,&quot;mississippi&quot;,&quot;missouri&quot;,&quot;montana&quot;,&quot;nebraska&quot;,&quot;nevada&quot;,&quot;new hampshire&quot;,&quot;new jersey&quot;,&quot;new mexico&quot;,&quot;new york&quot;,&quot;north dakota&quot;,&quot;north carolina&quot;,&quot;ohio&quot;,&quot;oklahoma&quot;,&quot;oregon&quot;,&quot;pennsylvania&quot;,&quot;rhode island&quot;,&quot;south carolina&quot;,&quot;south dakota&quot;,&quot;tennessee&quot;,&quot;texas&quot;,&quot;utah&quot;,&quot;vermont&quot;,&quot;virginia&quot;,&quot;washington&quot;,&quot;west virginia&quot;,&quot;wisconsin&quot;,&quot;wyoming&quot;]" data-items="4" data-provide="typeahead" id="typeahead" class="span6 typeahead" placeholder="shell commands">&nbsp;&nbsp;&nbsp;
+                </span>
+                  <button type="button" class="btn btn-large btn-primary" data-loading-text="Loading..." id="runcommand">Run</button>
+              </div>
+            </div>
+          </fieldset>
+    </div>
+</div><!--/span-->
+</div>
+<!--end execute command-->
+<hr>
+<!-- progress-->
+<div class="row-fluid sortable ui-sortable"  id="progress" style="display:none">
+<div style="margin-bottom: 9px;" class="progress progress-warning progress-striped active">
+<div style="width: 60%" class="bar"></div>
+</div>
+</div>
+<!-- info -->
+<div class="row-fluid sortable ui-sortable"  id="resinfo" style="display:none">
+<div class="box span12">
+    <div class="box-header">
+        <h2><i class="icon-th"></i> Result</h2>
+    </div>
+    <div class="box-content">
+        <ul id="myTab" class="nav tab-menu nav-tabs">
+            <li class="active"><a href="#Success"><span class="label label-success">Success</span></a></li>
+            <li><a href="#Failed"><span class="label label-important">Failed</span></a></li>
+            <li><a href="#Warning"><span class="label label-warning">Warning</span></a></li>
+        </ul>
+         
+        <div class="tab-content" id="myTabContent">
+            <div id="Success" class="tab-pane active">
+                <pre style="padding:10px 10px"></pre>
+            </div>
+            <div id="Failed" class="tab-pane">
+                <pre style="padding:10px 10px"></pre>
+            </div>
+            <div id="Warning" class="tab-pane">
+            </div>
+        </div>
+    </div>
+</div><!--/span-->
+</div>
+<hr>
+{% endblock %}
+
+{% block  extendsjs %}
+<script src="/static/app/include/js/base.js" type="text/javascript"></script>
+<script src="/static/app/include/js/ligerGrid.js" type="text/javascript"></script> 
+<!--    <script src="/static/app/include/js/TreeDeptData.js" type="text/javascript"></script>-->
+<script src="/static/app/exec_command.js" type="text/javascript"></script>
+{% endblock %}
+

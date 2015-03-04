@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block contents %}
+<!--<script src='/static/app/server_list.js'></script>-->
+<div>
+	<hr>
+	<ul class="breadcrumb">
+		<li>
+			<a href="/">Home</a> <span class="divider">/</span>
+		</li>
+		<li>
+			<a href="/app/getServerList">Server List</a>
+		</li>
+	</ul>
+	<hr>
+</div>
+<!--add host button-->
+<div class="row-fluid sortable ui-sortable">
+    <p style='float:right'>
+    <a class="btn btn-info" data-rel="tooltip" title="" href="/app/batchAddKeyAuth" data-original-title="Here Batch Add Key Auth">Batch Add Key Auth</a>
+    </p>
+</div>
+<!--end add host-->
+<hr>
+<!--start table-->
+<div class="row-fluid sortable ui-sortable">
+<div class="box span12">
+<div class="box-header">
+    <h2><i class="icon-align-justify"></i><span class="break"></span>Server List</h2>
+    <div class="box-icon">
+        <a class="btn-setting" href="#"><i class="icon-wrench"></i></a>
+        <a class="btn-minimize" href="#"><i class="icon-chevron-up"></i></a>
+        <a class="btn-close" href="#"><i class="icon-remove"></i></a>
+    </div>
+</div>
+<!--alert info-->
+<div class="box-content" id="disprogress" style="display:none">
+    <div style="margin-bottom: 9px;" class="progress progress-warning progress-striped active">
+        <div style="width: 60%" class="bar"></div>
+    </div>
+</div>
+<div class="box-content" id = "alert-success" style="display:none">
+    <div class="alert alert-success">
+        <button data-dismiss="alert" class="close" type="button">×</button>
+        <strong>Well done!</strong><label id="successlable"></label>
+    </div>
+</div>
+<div class="box-content" id = "alert-error" style="display:none">
+    <div class="alert alert-error">
+        <button data-dismiss="alert" class="close" type="button">×</button>
+        <strong>Error!</strong><label id="errorlable"></label> 
+    </div>
+</div>
+<!--alert info-->
+<div class="box-content">
+    <table class="table table-bordered table-striped table-condensed">
+          <thead>
+              <tr>
+                   <th>Hostname</th>
+                   <th>Remote IP</th>
+                   <th>Remote User</th>
+                   <th>Remote Port</th>
+                   <th>Status</th>                                          
+                   <th>Actions</th>                                          
+              </tr>
+          </thead>   
+          <tbody>
+          {% for list in server_list %}
+           <tr>
+               <td>{{list.server_name}}</td>
+               <td class="center">{{list.server_ip}}</td>
+               <td class="center">{{list.server_user}}</td>
+               <td class="center">{{list.server_port}}</td>
+               <td class="center sorting_1">
+               {% if list.server_is_login == 0 %}
+                    <label class="checkbox inline">
+                        <div class="checker" id="uniform-inlineCheckbox{{list.id}}">
+                            <span class="checked">
+                                <input type="checkbox"  value="1" id="inlineCheckbox1">
+                            </span>
+                        </div>authenticate
+                    </label>
+               {%else%}
+               authenticated
+               {% endif %}
+               </td> 
+               <td class="center">
+               {% if list.server_is_login == 1 %}
+                   <span class="label label-success">Active</span>
+               {%else%}
+               <span id="keyauth{{list.id}}" class="label" onclick="return keyauth({{list.id}});"   style="cursor:pointer">Inactive</span>
+               {% endif %}
+               </td>                                       
+           </tr>
+          {% endfor %}
+          </tbody>
+<!--
+          <tr>
+            <td colspan="6">
+                  <button class="btn btn-small btn-primary" style="margin-left:400px">Small button</button>
+            </td>
+          </tr>
+-->
+     </table>  
+     <div class="pagination pagination-centered">
+      <ul>
+        {% if server_list.has_previous %}
+        <li><a href="?page={{ server_list.previous_page_number }}">Prev</a></li>
+        {% endif %}
+        <li class="active">
+        <a href="#">{{ server_list.number }} of {{ server_list.paginator.num_pages }}</a>
+        </li>
+        {% if server_list.has_next %}
+        <li><a href="?page={{ server_list.next_page_number }}">Next</a></li>
+        {% endif %}
+      </ul>
+    </div>     
+</div>
+</div>
+</div>
+<!--end table-->
+{% endblock %}
+
+
+{% block extendsjs %}
+<script src='/static/app/server_list.js'></script>
+{% endblock %}
+
+
+
+

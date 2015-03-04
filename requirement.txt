@@ -1,0 +1,11 @@
+django==1.6.0
+mysql-python
+gunicorn
+psutil
+pexpect
+ansible
+sh
+django-celery
+flower
+django_admin_bootstrapped
+redis

@@ -1,0 +1,220 @@
+
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+The authenticity of host '192.168.56.99 (192.168.56.99)' can't be established.
+RSA key fingerprint is 18:00:f0:06:d0:d9:3c:6c:a5:af:9a:50:a2:45:d7:dc.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '192.168.56.99' (RSA) to the list of known hosts.
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+Now try logging into the machine, with "ssh '-p 22 root@127.0.0.1'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.56 port 22: No route to host
+ssh: connect to host 192.168.56.56 port 22: No route to host
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.56 port 22: No route to host
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+ssh: connect to host 192.168.56.99 port 22: Connection refused
+root@192.168.56.99's password: 123456
+
+Now try logging into the machine, with "ssh '-p 5000 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+The authenticity of host '192.168.56.2 (192.168.56.2)' can't be established.
+RSA key fingerprint is ca:b1:81:f6:48:7a:5a:be:e0:ad:d5:ec:6b:e5:99:c2.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '192.168.56.2' (RSA) to the list of known hosts.
+root@192.168.56.2's password: toor
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.2'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+The authenticity of host '192.168.56.56 (192.168.56.56)' can't be established.
+RSA key fingerprint is 70:84:30:f9:d5:b0:1c:6e:68:cc:e7:d2:f7:1c:e4:19.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '192.168.56.56' (RSA) to the list of known hosts.
+root@192.168.56.56's password: toor
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.56'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+root@192.168.56.99's password: 123456
+
+Now try logging into the machine, with "ssh '-p 5000 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.2 port 22: No route to host
+ssh: connect to host 192.168.56.99 port 5000: Connection refused
+ssh: connect to host 192.168.56.99 port 5000: Connection refused
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.2 port 22: No route to host
+Now try logging into the machine, with "ssh '-p 22 root@127.0.0.1'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.2 port 22: No route to host
+ssh: connect to host 192.168.56.2 port 22: No route to host
+ssh: connect to host 192.168.56.2 port 22: No route to host
+root@192.168.56.99's password: 123456
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.56 port 22: No route to host
+The authenticity of host '192.168.56.20 (192.168.56.20)' can't be established.
+RSA key fingerprint is 21:e4:28:19:59:75:e6:0e:58:dd:4a:8d:42:12:c4:a5.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '192.168.56.20' (RSA) to the list of known hosts.
+root@192.168.56.20's password: toor
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.20'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+ssh: connect to host 192.168.56.130 port 22: No route to host
+ssh: connect to host 192.168.56.2 port 22: No route to host
+ssh: connect to host 192.168.56.130 port 22: No route to host
+root@192.168.56.33's password: 123456
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.33'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+root@192.168.56.33's password: 123456
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.33'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+The authenticity of host '[192.168.56.99]:5000 ([192.168.56.99]:5000)' can't be established.
+RSA key fingerprint is 18:00:f0:06:d0:d9:3c:6c:a5:af:9a:50:a2:45:d7:dc.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '[192.168.56.99]:5000' (RSA) to the list of known hosts.
+root@192.168.56.99's password: 123456
+
+Now try logging into the machine, with "ssh '-p 5000 root@192.168.56.99'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+Usage: /usr/bin/ssh-copy-id [-h|-?|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+root@192.168.56.20's password: root
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.20'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+root@192.168.56.20's password: root
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.20'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+
+The authenticity of host '192.168.56.6 (192.168.56.6)' can't be established.
+RSA key fingerprint is 99:2e:2b:7b:07:c8:b1:fe:2d:2d:ec:d0:00:60:66:db.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '192.168.56.6' (RSA) to the list of known hosts.
+root@192.168.56.6's password: 123456
+
+Now try logging into the machine, with "ssh '-p 22 root@192.168.56.6'", and check in:
+
+  .ssh/authorized_keys
+
+to make sure we haven't added extra keys that you weren't expecting.
+

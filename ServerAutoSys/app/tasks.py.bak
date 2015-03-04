@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import time 
+from celery import Celery
+import os
+
+
+broker = 'redis://127.0.0.1/0'
+backend = 'redis://127.0.0.1/1'
+
+app = Celery('tasks', backend=backend, broker=broker)
+
+app.conf.update(
+    CELERY_TASK_SERIALIZER='json',
+    CELERY_ACCEPT_CONTENT=['json'],
+    CELERY_RESULT_SERIALIZER='json',
+)
+#CELERY_QUEUES = (
+#    Queue('default', Exchange('default'), routing_key='default'),
+#    Queue('for_task_A', Exchange('for_task_A'), routing_key='for_task_A'),
+#    Queue('for_task_B', Exchange('for_task_B'), routing_key='for_task_B'),
+#)
+#
+#CELERY_ROUTES = {
+#    'my_taskA': {'queue': 'for_task_A', 'routing_key': 'for_task_A'},
+#    'my_taskB': {'queue': 'for_task_B', 'routing_key': 'for_task_B'},
+#}
+@app.task
+def add(x, y):
+    time.sleep(10)
+    with open('/tmp/test', 'w+') as f:
+        z = x + y
+        f.write(str(z)+os.linesep)
