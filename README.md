@@ -12,7 +12,7 @@ django_serverauto
 
 ![image](img/index.png)
 
-密钥管理:
+密钥管理(以任务队列的方式执行批量添加):
 ----------------------
 
 ![image](img/batch_add_keys.png)
@@ -29,7 +29,7 @@ django_serverauto
 
 ![image](img/yum.png)
 
-rrdtool绘图:
+rrdtool绘图(系统信息的监控):
 -----------------------
 
 ![image](img/graph.png)
